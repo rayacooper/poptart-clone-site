@@ -1,0 +1,36 @@
+body {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+}
+
+#NavBar {
+    background-image: url(./assets/navbar-background.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    height: 10%;
+}
+
+#Menu-Icon{
+    width: 6vw;
+}
+
+.menu-bar {
+    width: 7vw;
+    height: 1vw;
+    border-radius: 25%;
+    background-color: white;
+    margin: 3px;
+}
+
+#Pop-Tart-Logo {
+    width: 28vw;
+}
+
+.nav-menu{
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+}
