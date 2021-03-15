@@ -1,7 +1,9 @@
 body {
+    font-family: "Proxima Nova", sans-serif;
     background-color: blue;
     display: flex;
     flex-direction: column;
+    color: white;
 }
 
 #NavBar {
@@ -25,12 +27,124 @@ body {
     margin: 3px;
 }
 
-#Pop-Tart-Logo {
+#NavBar img {
     width: 28vw;
+}
+
+#Search-Icon{
+    width: 6vw;
+    height: 6vw;
+    background-color: white;
+    border-radius: 50%;
+}
+
+#Search-Icon::before {
+   content: ''
 }
 
 .nav-menu{
     width: 80vw;
     display: flex;
     justify-content: space-between;
+}
+
+.Main-Load{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    background-image: url(https://www.poptarts.com/content/dam/NorthAmerica/poptarts/images/home/hero-slide-lemongroove.jpg);
+}
+
+button{
+    all: unset;
+}
+
+#Back-Arrow::before {
+    content: '';
+    position: absolute;
+    background-color: white;
+    width: 2em;
+    height: .3em;
+    border-radius: 25%;
+    transform: rotate(-45deg);
+}
+
+#Back-Arrow::after{
+    content: '';
+    position: absolute;
+    background-color: white;
+    width: 2em;
+    height: .3em;
+    border-radius: 25%;
+    transform: rotate(45deg);
+}
+
+#Center-Stage{
+    width: 60vw;
+}
+
+#Main-Text button{
+    background-color: blue;
+    padding: 2vw 5.5vw 2vw 5.5vw;
+}
+
+#Forward-Arrow{
+    background-color: white;
+    width: 2em;
+    height: .3em;
+    border-radius: 25%;
+    transform: rotate(-45deg);
+}
+
+#Forward-Arrow::before {
+    content: '';
+    position: absolute;
+    background-color: white;
+    width: 2em;
+    height: .3em;
+    border-radius: 25%;
+    transform: rotate(90deg);
+    top: -4vw;
+    right: -4vw;
+}
+
+#Products-Line {
+    background-color: white;
+}
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+}
+
+footer img{
+    width: 50vw;
+    padding: 4vw;
+}
+
+
+
+
+
+
+
+#Sticky-Rewards{
+    display: flex;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+}
+
+#Sticky-Rewards {
+    font-size: 4vw;
+}
+
+#Sticky-Rewards img{
+    height: 9vw;
 }
