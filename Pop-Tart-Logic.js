@@ -1,3 +1,5 @@
+// Hard-coded list of products for the blog-like view:
+
 const productsViewList = [
 
     {
@@ -30,3 +32,21 @@ const productsViewList = [
         flavor: "Can't decide? Click here and be extra torn."
     }
 ]
+
+// 'Onload' function that creates each individual div for us:
+
+function loadProducts() {
+
+    const leadButton = '<div class=\'products\'><button>View All</button></div>'
+
+    let productsFinal = productsViewList.map(e => {
+        return `<div class='products'>
+                    <img src='${e.img}'/>
+                    <h1>${e.header}</h1>
+                    <p>${e.flavor}</p>
+                    <button>View All</button>
+                </div>`;
+    }).join('')
+
+    document.getElementById("Products-Line").innerHTML = leadButton + productsFinal;
+}
