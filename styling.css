@@ -1,9 +1,14 @@
 html, body {
-    font-family: "Proxima Nova", sans-serif;
-    background-color: blue;
+    font-family: "Neucha-Regular", sans-serif;
+    font-size: 13px;
+    background-color: #0966b2;
     color: white;
     margin: 0;
     padding: 0;
+}
+
+li {
+    list-style-type: none;
 }
 
 #NavBar {
@@ -48,7 +53,7 @@ html, body {
     position: absolute;
     top: .875vw;
     right: .875vw;
-    background-color: blue;
+    background-color: #0966b2;
 }
 
 #Search-Icon::after{
@@ -83,7 +88,8 @@ html, body {
 
 button{
     all: unset;
-    position: relative
+    position: relative;
+    border-radius: 4px;
 }
 
 #Back-Arrow::before {
@@ -112,8 +118,12 @@ button{
     width: 60vw;
 }
 
+#Main-Text img {
+    width: 100%
+}
+
 #Main-Text button{
-    background-color: blue;
+    background-color: #0966b2;
     padding: 2vw 5.5vw 2vw 5.5vw;
 }
 
@@ -151,18 +161,24 @@ button{
 }
 
 #Products-Line h2 {
-    color: blue;
+    color: #0966b2;
 }
 
 .products {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%
+    width: 90%;
+    margin-top: 6vw;
+}
+
+.products img{
+    border-radius: 16px;
+    width: 100%;
 }
 
 .products button {
-    background-color: blue;
+    background-color: #0966b2;
     /* replace color w/ img when you have button svg */
     color: white;
     padding: 4vw 8vw 4vw 8vw;
@@ -171,7 +187,7 @@ button{
 footer{
     display: flex;
     justify-content: center;
-    background-color: blue;
+    background-color: #0966b2;
 }
 
 footer img{

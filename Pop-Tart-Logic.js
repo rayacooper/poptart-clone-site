@@ -3,13 +3,13 @@
 const productsViewList = [
 
     {
-        img: '',
+        img: './Assets/tile-favorites.jpg',
         header: "Fan Faves",
         flavor: 'Click here for the classics. Do it.'
     },
 
     {
-        img: '',
+        img: './Assets/tile-new.jpg',
         header: 'New',
         flavor: "Delicious new flavors even we can't believe we came up with. Click here for that new new."
     },
@@ -37,14 +37,14 @@ const productsViewList = [
 
 function loadProducts() {
 
-    const leadButton = '<div class=\'products\'><button>View All</button></div>'
+    const leadButton = '<div class=\'products\'><button><b>View All</b></button></div>'
 
     let productsFinal = productsViewList.map(e => {
         return `<div class='products'>
                     <img src='${e.img}'/>
                     <h1>${e.header}</h1>
                     <p>${e.flavor}</p>
-                    <button>View All</button>
+                    <button><b>View All</b></button>
                 </div>`;
     }).join('')
 
