@@ -199,7 +199,9 @@ footer img{
 
 
 
-
+h3 {
+    font-size: 1em;
+}
 
 #Sticky-Rewards{
     display: flex;
@@ -215,4 +217,29 @@ footer img{
 
 #Sticky-Rewards img{
     height: 9vw;
+    margin: 3vw;
+}
+
+#Rewards-Arrow::before {
+    content: '';
+    position: absolute;
+    background-color: white;
+    width: 2em;
+    height: .3em;
+    border-radius: 15%;
+    transform: rotate(45deg);
+    top: -3.5vw;
+    right: 0px;
+}
+
+#Rewards-Arrow::after {
+    content: '';
+    position: absolute;
+    background-color: white;
+    width: 2em;
+    height: .3em;
+    border-radius: 15%;
+    transform: rotate(-45deg);
+    top: 1vw;
+    right: 0px;
 }
